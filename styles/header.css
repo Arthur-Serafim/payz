@@ -14,7 +14,7 @@
 
   z-index: -2;
 
-  clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 }
 
 @media only screen and (max-width: 1860px) {
@@ -81,7 +81,7 @@
 
   padding: 0 239px;
   letter-spacing: -0.05em;
-  line-height: 83%;
+  line-height: 82%;
   padding-bottom: 21px;
 }
 
