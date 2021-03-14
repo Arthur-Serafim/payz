@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "Roobert";
+  src: url("/fonts/Roobert-Regular.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Roobert";
+  src: url("/fonts/Roobert-Bold.otf");
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roobert";
+}
+
+.header-section {
+  height: max-content;
+  position: relative;
+}
+
+.header-background {
+  position: absolute;
+  top: 0;
+  width: 100vh;
+  height: 100vw;
+  max-width: 100vh;
+  max-height: 100vw;
+  transform: translatex(calc(50vw - 50%)) translatey(calc(50vh - 50%))
+    rotate(-90deg);
+  background: conic-gradient(
+    from 136.77deg at 61.74% 62.01%,
+    rgba(221, 235, 255, 0) 0deg,
+    #b3c4ef 151.4deg,
+    rgba(214, 228, 252, 0.172573) 324deg,
+    rgba(221, 235, 255, 0) 360deg
+  );
+  z-index: -10;
+}
+
+.header-absolute-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.header-mobile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  user-select: none;
+}
+
+.header-mobile-image {
+  height: 90%;
+}
+
+.header-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 20000;
+
+  padding-top: 125px;
+}
+
+.header-logo-image {
+  object-fit: cover;
+  opacity: 1;
+}
+
+.header-title {
+  background: -webkit-linear-gradient(
+    102.89deg,
+    #373fff 11.81%,
+    #00b2ff 62.61%,
+    #1c24de 97.36%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-weight: bold;
+  font-size: 72px;
+  text-align: center;
+  margin-top: 17px;
+  margin-bottom: 50px;
+
+  padding: 0 239px;
+}
+
+.header-description {
+  margin-top: 0;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+
+.header-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-input {
+  height: 72px;
+  padding: 0 203px 0 29px;
+  margin-right: 15px;
+  font-size: 18px;
+  font-family: "Roobert";
+  box-sizing: border-box;
+
+  border: double 3px transparent;
+  border-radius: 10px;
+  background-image: linear-gradient(white, white),
+    -webkit-linear-gradient(102.89deg, #373fff 11.81%, #00b2ff 62.61%, #1c24de
+          97.36%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  outline: none;
+}
+
+.header-input::placeholder {
+  color: #92a4b9;
+}
+
+.header-button {
+  background: conic-gradient(
+    from 31.49deg at 54.76% 56.94%,
+    #373fff 0deg,
+    #00c2ff 210deg,
+    #0c4cf1 360deg
+  );
+  border-radius: 10px;
+  border: none;
+  color: white;
+  text-align: center;
+  height: 72px;
+  cursor: pointer;
+  padding: 0 32px;
+  font-size: 20px;
+}
+
+.header-perks-container {
+  width: 100%;
+  margin-top: 75px;
+  padding: 0 117px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-perks-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-perks-label {
+  margin-top: 25px;
+  color: #4b65a8;
+  font-size: 17px;
+}
