@@ -9,12 +9,17 @@ function handleLoadPerks() {
     { image: "/assets/perks-5.png", label: "Pay with Stablecoins" },
   ];
 
-  descriptionContent.forEach((item) => {
+  descriptionContent.forEach((item, index) => {
     const container = document.createElement("div");
     container.className = "header-perks-item";
 
+    if (index === 0) {
+      container.classList.add("header-hide-small");
+    }
+
     const image = document.createElement("img");
     image.src = item.image;
+    image.className = "header-perks-image";
 
     const description = document.createElement("p");
     description.innerText = item.label;
