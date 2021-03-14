@@ -19,3 +19,7 @@ body {
   box-sizing: border-box;
   font-family: "Roobert";
 }
+
+.content-top {
+  margin-top: 0 !important;
+}
