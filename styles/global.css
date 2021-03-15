@@ -1,10 +1,10 @@
 .global-section {
-  height: 1440px;
+  height: 1400px;
   background: url("/assets/global.png");
   background-size: cover;
   background-position: right;
   object-fit: cover;
-  margin-top: -450px;
+  margin-top: -350px;
   position: relative;
 
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
@@ -13,6 +13,18 @@
   justify-content: center;
   padding: 0 100px;
   z-index: 2;
+}
+
+@media only screen and (max-width: 1500px) {
+  .global-section {
+    height: 1050px
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .global-section {
+    height: 900px
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -31,18 +43,24 @@
 
 .global-mobile {
   position: absolute;
-  top: calc(50% - 375px);
+  top: 250px;
   right: 0;
-  height: 100vh;
+  height: 918px;
+  max-height: 85vh;
   width: auto;
   z-index: -1;
   object-fit: contain;
 }
 
-@media only screen and (max-width: 1300px) {
-  .global-mobile {
-    height: 650px;
-    top: calc(50% - 250px);
+@media only screen and (max-width: 1500px) {
+  .global-mobile,
+  .digital-mobile,
+  .rewards-mobile {
+    height: 630px !important;
+  }
+
+  .digital-mobile {
+    margin-top: 100px;
   }
 }
 
@@ -57,18 +75,12 @@
 .global-content {
   display: flex;
   flex-direction: column;
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1500px) {
   .global-content {
     margin-top: 200px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .global-content {
-    margin-top: 400px;
   }
 }
 
@@ -107,7 +119,9 @@
   font-size: 58px;
   font-weight: bold;
   margin-top: 15px;
-  max-width: 650px;
+  max-width: 560px;
+  line-height: 110%;
+  letter-spacing: -0.04em;
 }
 
 @media only screen and (max-width: 1300px) {

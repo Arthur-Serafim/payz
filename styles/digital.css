@@ -1,9 +1,65 @@
 .digital-section {
-  height: 1200px;
-  margin-top: -175px;
-  clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 90%);
-  background-color: white;
+  height: 1400px;
+  margin-top: -220px;
+
+  padding-top: 100px;
+  position: relative;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 1500px) {
+  .digital-section {
+    height: 1200px;
+    margin-top: -200px !important;
+  }
+}
+
+.digital-background {
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 100%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -50;
+}
+
+.digital-background-image {
   background-image: url("/assets/global.png");
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -50;
+}
+
+@media only screen and (max-width: 1800px) {
+  .digital-section {
+    margin-top: -175px;
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  .digital-section {
+    margin-top: -200px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .digital-section {
+    margin-top: -250px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .digital-section {
+    margin-top: -275px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -20,5 +76,5 @@
 }
 
 .digital-mobile {
-  margin-top: -100px;
+  top: 150px;
 }

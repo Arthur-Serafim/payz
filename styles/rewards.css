@@ -1,21 +1,35 @@
 .rewards-section {
-  height: 1100px;
+  height: 1440px;
   background: url("/assets/rewards.png");
   background-size: cover;
-  background-position: left;
 
   object-fit: cover;
-  margin-top: -175px;
+  margin-top: -300px;
   position: relative;
   z-index: 5;
 
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
   padding: 0 100px;
+}
+
+.rewards-content {
+  margin-top: -100px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .rewards-section {
+    height: 1000px;
+    margin-top: -250px;
+  }
+
+  .rewards-content {
+    margin-top: 100px;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -49,25 +63,11 @@
 
 .rewards-mobile {
   position: absolute;
-  top: calc(50% - 500px);
+  top: 250px;
   left: 0;
-  height: 100vh;
+  height: 80%;
+  max-height: 85vh;
   width: auto;
   z-index: -1;
   object-fit: contain;
-}
-
-@media only screen and (max-width: 1300px) {
-  .rewards-mobile {
-    height: 650px;
-    top: calc(50% - 250px);
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  .rewards-mobile {
-    position: relative;
-    margin-top: 0;
-    width: 100%;
-  }
 }
