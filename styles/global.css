@@ -31,12 +31,11 @@
 
 .global-mobile {
   position: absolute;
-  top: calc(50% - 300px);
+  top: calc(50% - 375px);
   right: 0;
   height: 100vh;
   width: auto;
   z-index: -1;
-  height: 750px;
   object-fit: contain;
 }
 

@@ -1,5 +1,6 @@
 .digital-section {
-  margin-top: -300px;
+  height: 1200px;
+  margin-top: -175px;
   clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 90%);
   background-color: white;
   background-image: url("/assets/global.png");
@@ -16,4 +17,8 @@
   .digital-section {
     margin-top: -450px;
   }
+}
+
+.digital-mobile {
+  margin-top: -100px;
 }
