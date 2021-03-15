@@ -43,9 +43,9 @@
 
 .global-mobile {
   position: absolute;
-  top: 250px;
+  top: 200px;
   right: 0;
-  height: 918px;
+  height: 1050px;
   width: auto;
   z-index: -1;
   object-fit: contain;
@@ -55,11 +55,11 @@
   .global-mobile,
   .digital-mobile,
   .rewards-mobile {
-    height: 630px !important;
+    height: 580px !important;
   }
 
   .digital-mobile {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 }
 
