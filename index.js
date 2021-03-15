@@ -4,7 +4,7 @@ function handleLoadPerks() {
   const descriptionContent = [
     { image: "/assets/perks-1.png", label: "Zero Transaction Fees" },
     { image: "/assets/perks-2.png", label: "Bitcoin Rewards" },
-    { image: "/assets/perks-3.png", label: "VISA and MastercardPayments" },
+    { image: "/assets/perks-3.png", label: "VISA and Mastercard Payments" },
     { image: "/assets/perks-4.png", label: "Global Payments" },
     { image: "/assets/perks-5.png", label: "Pay with Stablecoins" },
   ];

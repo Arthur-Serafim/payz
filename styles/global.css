@@ -2,6 +2,7 @@
   height: 145vh;
   background: url("/assets/global.png");
   background-size: cover;
+  background-position: right;
   object-fit: cover;
   margin-top: -45vh;
   position: relative;
@@ -14,15 +15,62 @@
   z-index: 2;
 }
 
+@media only screen and (max-width: 1100px) {
+  .global-section {
+    height: 160vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .global-section {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    padding: 0 25px;
+    height: 155vh;
+  }
+}
+
 .global-mobile {
   position: absolute;
-  top: 200px;
+  top: calc(50% - 300px);
   right: 0;
   height: 100vh;
+  width: auto;
+  z-index: -1;
+  height: 750px;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 1300px) {
+  .global-mobile {
+    height: 650px;
+    top: calc(50% - 250px);
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .global-mobile {
+    position: relative;
+    margin-top: 0;
+    width: 100%;
+  }
 }
 
 .global-content {
+  display: flex;
+  flex-direction: column;
   margin-top: 200px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .global-content {
+    margin-top: 275px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .global-content {
+    margin-top: 400px;
+  }
 }
 
 .global-tag {
@@ -32,6 +80,19 @@
   -webkit-text-fill-color: transparent;
   margin: 0;
   font-size: 32px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .global-tag {
+    font-size: 22px;
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .global-tag {
+    font-size: 20px;
+  }
 }
 
 .global-title {
@@ -48,4 +109,29 @@
   font-weight: bold;
   margin-top: 15px;
   max-width: 650px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .global-title {
+    font-size: 42px;
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .global-title {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .global-title {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .global-title {
+    font-size: 28px;
+  }
 }
