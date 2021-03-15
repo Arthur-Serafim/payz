@@ -2,6 +2,8 @@
   height: 1440px;
   background: url("/assets/rewards.png");
   background-size: cover;
+  background-position: left;
+
   object-fit: cover;
   margin-top: -35vh;
   position: relative;

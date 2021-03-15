@@ -2,6 +2,7 @@
   height: 700px;
   background: url("/assets/footer.png");
   background-size: cover;
+  background-position: right;
   object-fit: cover;
   margin-top: -22vh;
   z-index: 0;

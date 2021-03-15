@@ -1,4 +1,15 @@
 .digital-section {
-  margin-top: -30vh;
-  background: white;
+  margin-top: -450px;
+}
+
+@media only screen and (max-width: 600px) {
+  .digital-section {
+    margin-top: -350px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .digital-section {
+    margin-top: -450px;
+  }
 }
