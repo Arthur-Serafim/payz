@@ -1,5 +1,5 @@
 .rewards-section {
-  height: 145vh;
+  height: 1440px;
   background: url("/assets/rewards.png");
   background-size: cover;
   object-fit: cover;
@@ -16,9 +16,56 @@
   padding: 0 100px;
 }
 
+@media only screen and (max-width: 1300px) {
+  .rewards-section {
+    height: 1200px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .rewards-section {
+    height: 1440px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .rewards-section {
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+    padding: 0 25px;
+    height: 1400px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .rewards-section {
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+    padding: 0 25px;
+    height: 1200px;
+  }
+}
+
 .rewards-mobile {
   position: absolute;
-  top: 200px;
+  top: calc(50% - 300px);
   left: 0;
   height: 100vh;
+  width: auto;
+  z-index: -1;
+  height: 750px;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 1300px) {
+  .rewards-mobile {
+    height: 650px;
+    top: calc(50% - 250px);
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .rewards-mobile {
+    position: relative;
+    margin-top: 0;
+    width: 100%;
+  }
 }
