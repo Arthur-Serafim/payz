@@ -1,10 +1,14 @@
 .digital-section {
   margin-top: -450px;
+  clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 90%);
+  background-color: white;
+  background-image: url("/assets/global.png");
 }
 
 @media only screen and (max-width: 600px) {
   .digital-section {
     margin-top: -350px;
+    clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 95%);
   }
 }
 
