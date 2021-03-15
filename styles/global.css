@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: right;
   object-fit: cover;
-  margin-top: -45vh;
+  margin-top: -450px;
   position: relative;
 
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
