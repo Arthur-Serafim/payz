@@ -1,12 +1,12 @@
 .header-section {
-  height: 125vh;
+  height: 1200px;
   position: relative;
 }
 
 .header-background {
   position: absolute;
   top: 0;
-  height: 125vh;
+  height: 1200px;
   width: 100%;
   background: url("/assets/background.png");
   background-size: cover;
@@ -26,7 +26,21 @@
 @media only screen and (max-width: 1860px) {
   .header-section,
   .header-background {
-    height: 135vh;
+    height: 1000px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .header-section,
+  .header-background {
+    height: 1200px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header-section,
+  .header-background {
+    height: 1100px;
   }
 }
 
