@@ -55,13 +55,18 @@
   margin-top: 30px;
 }
 
-@media only screen and (max-width: 460px) {
-  .footer-stores-container {
-    display: flex;
-    flex-direction: column;
-  }
+.footer-stores-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.footer-stores-container img:first-of-type {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 460px) {
   .footer-stores-container img {
-    margin-bottom: 10px;
+    width: 40%;
   }
 }
