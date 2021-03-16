@@ -70,12 +70,6 @@
 }
 
 
-@media only screen and (max-width: 400px) {
-  .digital-section {
-    margin-top: -450px;
-  }
-}
-
 .digital-mobile {
   top: 100px;
 }

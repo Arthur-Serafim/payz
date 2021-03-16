@@ -39,12 +39,18 @@ body {
 
 @media only screen and (max-width: 600px) {
   .global-content.content-top {
-    margin-top: -50px !important;
+    margin-top: -100px !important;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  .content-top {
-    margin-top: 300px !important;
+  .digital-mobile {
+    margin-top: 60px;
+  }
+
+  .global-mobile,
+  .rewards-mobile,
+  .digital-mobile {
+    transform: scale(1.15);
   }
 }

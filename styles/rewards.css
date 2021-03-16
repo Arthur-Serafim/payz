@@ -52,12 +52,12 @@
 
 @media only screen and (max-width: 600px) {
   .rewards-section {
-    padding: 0 25px;
+    padding: 0 25px !important;
     height: 1300px;
   }
 
   .rewards-content {
-    margin-top: 300px !important;
+    margin-top: 200px !important;
   }
 }
 
@@ -70,8 +70,11 @@
 @media only screen and (max-width: 400px) {
   .rewards-section {
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
-    padding: 0 25px;
-    height: 1200px;
+    height: 1150px;
+  }
+
+  .rewards-content {
+    margin-top: 325px !important;
   }
 }
 
