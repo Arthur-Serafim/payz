@@ -6,6 +6,12 @@
 
 @font-face {
   font-family: "Roobert";
+  src: url("/fonts/Roobert-Medium.otf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Roobert";
   src: url("/fonts/Roobert-Bold.otf");
   font-weight: 700;
 }
