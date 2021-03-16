@@ -44,14 +44,14 @@
 
 @media only screen and (max-width: 600px) {
   .global-section {
-    padding: 0 25px;
+    padding: 0px 25px !important;
     height: 1250px;
   }
 }
 
 @media only screen and (max-width: 450px) {
   .global-section {
-    height: 1100px;
+    height: 1000px;
   }
 }
 
@@ -142,10 +142,15 @@
 
 @media only screen and (max-width: 600px) {
   .global-content {
-    margin-top: 250px !important;
+    margin-top: 200px !important;
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .global-content {
+    margin-top: 300px !important;
+  }
+}
 
 .global-tag {
   background: linear-gradient(100.64deg, #377bff -81.04%, #00b2ff 24.28%);
@@ -180,7 +185,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 58px;
-  font-weight: bold;
+  font-weight: 600;
   margin-top: 15px;
   max-width: 560px;
   line-height: 110%;
