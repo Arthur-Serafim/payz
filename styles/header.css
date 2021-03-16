@@ -41,13 +41,6 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .header-section,
-  .header-background {
-    height: 1100px;
-  }
-}
-
 .header-absolute-container {
   position: absolute;
   top: 0;

@@ -53,7 +53,11 @@
 @media only screen and (max-width: 600px) {
   .rewards-section {
     padding: 0 25px;
-    height: 1400px;
+    height: 1300px;
+  }
+
+  .rewards-content {
+    margin-top: 300px !important;
   }
 }
 

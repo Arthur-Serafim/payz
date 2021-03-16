@@ -59,6 +59,7 @@
   .digital-section {
     margin-top: -350px;
     clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 95%);
+    height: 1700px;
   }
 }
 

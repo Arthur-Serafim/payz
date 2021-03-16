@@ -45,7 +45,7 @@
 @media only screen and (max-width: 600px) {
   .global-section {
     padding: 0 25px;
-    height: 1500px;
+    height: 1250px;
   }
 }
 
@@ -100,6 +100,7 @@
 @media only screen and (max-width: 1100px) {
   .global-content {
     margin-top: 250px;
+    width: 100%;
   }
 
   .rewards-content {
@@ -126,6 +127,19 @@
     padding: 0 100px;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .global-content, .rewards-content, .content-top {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .global-content {
+    margin-top: 250px !important;
+  }
+}
+
 
 .global-tag {
   background: linear-gradient(100.64deg, #377bff -81.04%, #00b2ff 24.28%);
