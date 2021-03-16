@@ -1,6 +1,7 @@
 .header-section {
   height: 1050px;
   position: relative;
+  z-index: 10;
 }
 
 .header-background {
@@ -18,16 +19,18 @@
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 }
 
-@media only screen and (max-width: 600px) {
-  .header-background {
-    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
-  }
-}
+
 
 @media only screen and (max-width: 1860px) {
   .header-section,
   .header-background {
     height: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .header-background {
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
   }
 }
 
@@ -198,9 +201,16 @@
 
 @media only screen and (max-width: 650px) {
   .header-input {
-    width: 80%;
+    width: 60%;
+    height: 60px;
     margin: 0;
     margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header-input {
+    width: 80%;
   }
 }
 
@@ -229,6 +239,13 @@
 @media only screen and (max-width: 650px) {
   .header-button {
     margin: 0;
+    width: 60%;
+    height: 60px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header-button {
     width: 80%;
   }
 }
