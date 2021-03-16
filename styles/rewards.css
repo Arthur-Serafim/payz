@@ -61,6 +61,12 @@
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .rewards-section {
+    height: 1200px;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   .rewards-section {
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);

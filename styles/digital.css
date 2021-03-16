@@ -63,6 +63,13 @@
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .digital-section {
+    height: 1500px;
+  }
+}
+
+
 @media only screen and (max-width: 400px) {
   .digital-section {
     margin-top: -450px;
