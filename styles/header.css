@@ -41,8 +41,8 @@
 
 @media only screen and (max-width: 880px) {
   .header-section,
-  .header-background {F
-    height: 1100px;height
+  .header-background {
+    height: 1100px;
   }
 }
 
@@ -79,7 +79,7 @@
 @media only screen and (max-width: 600px) {
   .header-mobile-image {
     height: 60%;
-    margin-top: 20px;
+    margin-top: 25px;
   }
 }
 
@@ -160,7 +160,7 @@
   .header-title {
     padding: 0 25px;
     margin-bottom: 5px;
-    margin-top: 0;
+    margin-top: 10px;
   }
 }
 
@@ -307,7 +307,7 @@
   .header-perks-container {
     grid-gap: 0;
     margin-top: 30px;
-    grid-template-rows: repeat(2, 175px);
+    grid-template-rows: repeat(2, 150px);
   }
 }
 
@@ -336,7 +336,7 @@
 
 @media only screen and (max-width: 600px) {
   .header-perks-label {
-    font-size: 15px
+    font-size: 15px;
   }
 }
 
