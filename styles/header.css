@@ -19,8 +19,6 @@
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 }
 
-
-
 @media only screen and (max-width: 1860px) {
   .header-section,
   .header-background {
@@ -226,9 +224,9 @@
 @media only screen and (max-width: 650px) {
   .header-input {
     width: 60%;
-    height: 60px;
+    height: 50px;
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 }
 
@@ -236,7 +234,7 @@
   .header-input {
     width: 90%;
     font-size: 13px;
-  border: double 2px transparent;
+    border: double 2px transparent;
   }
 }
 
@@ -266,7 +264,7 @@
   .header-button {
     margin: 0;
     width: 60%;
-    height: 60px;
+    height: 50px;
   }
 }
 

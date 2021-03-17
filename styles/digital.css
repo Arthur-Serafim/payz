@@ -67,8 +67,11 @@
   .digital-section {
     height: 1500px;
   }
-}
 
+  .digital-section .global-title {
+    padding-right: 20px;
+  }
+}
 
 .digital-mobile {
   top: 100px;

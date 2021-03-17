@@ -17,13 +17,13 @@
 
 @media only screen and (max-width: 1600px) {
   .global-section {
-    height: 1050px
+    height: 1050px;
   }
 }
 
 @media only screen and (max-width: 1300px) {
   .global-section {
-    height: 900px
+    height: 900px;
   }
 }
 
@@ -117,13 +117,17 @@
     margin-top: 300px !important;
   }
 
-  .global-content, .rewards-content, .content-top {
+  .global-content,
+  .rewards-content,
+  .content-top {
     display: flex;
     flex-direction: column;
     padding: 0 200px;
   }
 
-  .global-mobile, .rewards-mobile, .digital-mobile {
+  .global-mobile,
+  .rewards-mobile,
+  .digital-mobile {
     position: static !important;
     width: 100% !important;
     max-width: 600px;
@@ -133,13 +137,17 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .global-content, .rewards-content, .content-top {
+  .global-content,
+  .rewards-content,
+  .content-top {
     padding: 0 100px;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .global-content, .rewards-content, .content-top {
+  .global-content,
+  .rewards-content,
+  .content-top {
     padding: 0;
   }
 }
@@ -220,4 +228,3 @@
     margin-top: 55px;
   }
 }
-

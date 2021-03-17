@@ -19,7 +19,7 @@
 body {
   margin: 0;
   height: max-content;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 * {
@@ -44,13 +44,25 @@ body {
 }
 
 @media only screen and (max-width: 400px) {
+  .global-section,
+  .rewards-section,
+  .digital-section {
+    overflow-x: hidden;
+  }
+
   .digital-mobile {
     margin-top: 60px;
   }
 
-  .global-mobile,
-  .rewards-mobile,
+  .global-mobile {
+    transform: scale(1.15) translateX(-15px);
+  }
+
   .digital-mobile {
-    transform: scale(1.15);
+    transform: scale(1.2) translateX(-20px);
+  }
+
+  .rewards-mobile {
+    transform: scale(1.2) translateX(20px);
   }
 }
