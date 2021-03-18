@@ -29,6 +29,7 @@
       fbq('track', 'PageView');
     </script>
   <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=350106089626443&ev=PageView&noscript=1"
@@ -56,8 +57,9 @@
           Join the waitlist for early access to the Payz App.
         </p>
         <div class="header-input-container">
-          <form action="https://getpayz.us1.list-manage.com/subscribe/post?u=a6d30d8e4a3351e8f087ac4b9&amp;id=2dbeb1669b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
-            <input
+          <form class="mailchimpform" action="https://getpayz.us1.list-manage.com/subscribe/post" method="POST" target="formaReturning">
+            <input type="hidden" name="u" value="a6d30d8e4a3351e8f087ac4b9">
+            <input type="hidden" name="id" value="2dbeb1669b"><input
               type="email"
               value=""
               name="EMAIL"
@@ -109,7 +111,9 @@
         Join the waitlist for early access to the PayZ App.
       </h2>
       <div class="header-input-container">
-        <form action="https://getpayz.us1.list-manage.com/subscribe/post?u=a6d30d8e4a3351e8f087ac4b9&amp;id=2dbeb1669b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+        <form class="mailchimpform" action="https://getpayz.us1.list-manage.com/subscribe/post" method="POST" target="formaReturning">
+          <input type="hidden" name="u" value="a6d30d8e4a3351e8f087ac4b9">
+          <input type="hidden" name="id" value="2dbeb1669b">
           <input
           type="email"
           value=""
@@ -133,27 +137,40 @@
     <script src="./index.js"></script>
   </body>
   <script>
-    document.querySelectorAll('form').forEach(form => {
-      form.target = 'formaReturning'
+    jQuery('.mailchimpform').submit(function (e) {
+      var $this = jQuery(this);
+      jQuery.ajax({
+          type: "GET",
+          url: "https://getpayz.us1.list-manage.com/subscribe/post-json?c=?",
+          data: $this.serialize(),
+          dataType: 'json',
+          contentType: "application/json; charset=utf-8",
+          error: function (err) {
+              alert("Could not connect to the registration server.");
+          },
+          success: function (data) {
+              if (data.result != "success") {
+                document.querySelectorAll('.header-button').forEach(element => {
+                  element.innerText = 'Error subscribing to Waitlist!'
+                })
+              } else {
+                document.querySelectorAll('.header-button').forEach(element => {
+                  element.innerText = 'Subscribed to Waitlist!'
+                })
+              }
 
-      form.addEventListener('submit', () => {
-        document.querySelectorAll('.header-input').forEach(element => {
-          element.value = ''
-        })
+              document.querySelectorAll('.header-input').forEach(element => {
+                element.value = ''
+              })
 
-        setTimeout(() => {
-          document.querySelectorAll('.header-button').forEach(element => {
-            element.innerText = 'Subscribed to Waitlist!'
-          })
-
-          setTimeout(() => {
-            document.querySelectorAll('.header-button').forEach(element => {
-              element.innerText = 'Join Waitlist'
-            })
-          }, 3000)
-        }, 1000)
-      })
+              setTimeout(() => {
+                document.querySelectorAll('.header-button').forEach(element => {
+                  element.innerText = 'Join Waitlist'
+                })
+              }, 3000)
+          }
+      });
+      return false;
     });
-
   </script>
 </html>
