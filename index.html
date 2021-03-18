@@ -109,6 +109,7 @@
         Join the waitlist for early access to the PayZ App.
       </h2>
       <div class="header-input-container">
+        <iframe name="formaReturning" style="display:none !important;" frameborder="0"></iframe>
         <form action="https://getpayz.us1.list-manage.com/subscribe/post?u=a6d30d8e4a3351e8f087ac4b9&amp;id=2dbeb1669b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
           <input
             type="email"
@@ -120,7 +121,7 @@
             placeholder="Enter your email address"
             required
           />
-          <button name="subscribe" type="submit" class="header-button"  id="mc-embedded-subscribe">Join Waitlist</button>
+          <button name="subscribe" type="submit" class="header-button" id="mc-embedded-subscribe">Join Waitlist</button>
         </form>
       </div>
       <p class="header-waiting">Coming Soon</p>
@@ -131,4 +132,27 @@
     </footer>
     <script src="./index.js"></script>
   </body>
+  <script>
+    const form = document.querySelector('form');
+    form.target = 'formaReturning'
+
+    form.addEventListener('submit', () => {
+      document.querySelectorAll('.header-input').forEach(element => {
+        element.value = ''
+      })
+
+      setTimeout(() => {
+        document.querySelectorAll('.header-button').forEach(element => {
+          element.innerText = 'Subscribed to Waitlist!'
+        })
+
+        setTimeout(() => {
+          document.querySelectorAll('.header-button').forEach(element => {
+            element.innerText = 'Join Waitlist'
+          })
+        }, 3000)
+      }, 1000)
+    })
+
+  </script>
 </html>

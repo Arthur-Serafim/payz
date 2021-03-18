@@ -233,7 +233,7 @@
 
 @media only screen and (max-width: 600px) {
   .header-input {
-    width: 90%;
+    width: 85%;
     font-size: 13px;
     border: double 2px transparent;
   }
@@ -271,7 +271,7 @@
 
 @media only screen and (max-width: 600px) {
   .header-button {
-    width: 90%;
+    width: 85%;
     font-size: 16px;
   }
 }
