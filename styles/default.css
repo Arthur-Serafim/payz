@@ -20,6 +20,7 @@ body {
   margin: 0;
   height: max-content;
   overflow-x: hidden !important;
+  width: 100vw;
 }
 
 * {
