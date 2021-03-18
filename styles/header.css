@@ -198,7 +198,8 @@
 
 .header-input {
   height: 72px;
-  padding: 0 203px 0 29px;
+  width: 430px;
+  padding: 0 29px;
   margin-right: 15px;
   font-size: 18px;
   font-family: "Roobert";
