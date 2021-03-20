@@ -87,8 +87,13 @@
   margin-right: 10px;
 }
 
+.footer-stores-container img {
+  height: 56px;
+}
+
 @media only screen and (max-width: 460px) {
   .footer-stores-container img {
     width: 40%;
+    height: auto;
   }
 }

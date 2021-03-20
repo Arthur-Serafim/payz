@@ -2,11 +2,11 @@ function handleLoadPerks() {
   const perksContainer = document.querySelector(".header-perks-container");
 
   const descriptionContent = [
-    { image: "/assets/perks-1.svg", label: "Zero Transaction Fees" },
-    { image: "/assets/perks-2.svg", label: "Bitcoin Rewards" },
-    { image: "/assets/perks-3.svg", label: "VISA and Mastercard Payments" },
-    { image: "/assets/perks-4.svg", label: "Global Payments" },
-    { image: "/assets/perks-5.svg", label: "Pay with Stablecoins" },
+    { image: "/assets/perks-1.png", label: "Zero Transaction Fees" },
+    { image: "/assets/perks-2.png", label: "Bitcoin Rewards" },
+    { image: "/assets/perks-3.png", label: "VISA and Mastercard Payments" },
+    { image: "/assets/perks-4.png", label: "Global Payments" },
+    { image: "/assets/perks-5.png", label: "Pay with Stablecoins" },
   ];
 
   descriptionContent.forEach((item, index) => {
