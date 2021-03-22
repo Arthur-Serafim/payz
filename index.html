@@ -132,6 +132,9 @@
         <img src="/assets/play-store.png" alt="Get on playstore" />
       </div>
     </footer>
+    <div class="chip-container">
+      <div class="chip"></div>
+    </div>
     <iframe name="formaReturning" style="display:none !important;" frameborder="0"></iframe>
     <script src="./index.js"></script>
   </body>
@@ -148,14 +151,14 @@
               alert("Could not connect to the registration server.");
           },
           success: function (data) {
+            console.log(data)
               if (data.result != "success") {
-                document.querySelectorAll('.header-button').forEach(element => {
-                  element.innerText = 'Error subscribing to Waitlist!'
-                })
+                document.querySelector('.chip-container').classList.add('display')
+                document.querySelector('.chip').classList.add('error')
+                document.querySelector('.chip').textContent = 'Error subscribing to mail list!'
               } else {
-                document.querySelectorAll('.header-button').forEach(element => {
-                  element.innerText = 'Subscribed to Waitlist!'
-                })
+                document.querySelector('.chip-container').classList.add('display')
+                document.querySelector('.chip').textContent = 'Subscribed successfully'
               }
 
               document.querySelectorAll('.header-input').forEach(element => {
@@ -163,9 +166,8 @@
               })
 
               setTimeout(() => {
-                document.querySelectorAll('.header-button').forEach(element => {
-                  element.innerText = 'Join Waitlist'
-                })
+                document.querySelector('.chip-container').classList.remove('display')
+                document.querySelector('.chip').classList.remove('error')
               }, 3000)
           }
       });

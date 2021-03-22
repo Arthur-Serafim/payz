@@ -76,3 +76,31 @@ body {
     align-items: center;
   }
 }
+
+.chip {
+  padding: 15px 30px;
+  background: #76ff03;
+  color: white;
+  border-radius: 4px;
+  width: 80%;
+  text-align: center;
+}
+
+.chip-container {
+  position: fixed;
+  top: 15px;
+  left: 0;
+  right: 0;
+
+  display: none;
+  z-index: 9999999999999;
+}
+
+.display {
+  display: flex !important;
+  justify-content: center;
+}
+
+.error {
+  background: #ff3d00;
+}

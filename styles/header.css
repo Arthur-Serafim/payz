@@ -102,11 +102,14 @@
 .header-logo-image {
   object-fit: cover;
   opacity: 1;
+  height: 43px;
+  width: auto;
 }
 
 @media only screen and (max-width: 600px) {
   .header-logo-image {
     width: 70px;
+    height: auto;
   }
 
   .header-content-container {
@@ -307,7 +310,7 @@
 @media only screen and (max-width: 600px) {
   .header-perks-container {
     grid-gap: 0;
-    margin-top: 30px;
+    margin-top: 42px;
     grid-template-rows: repeat(2, 150px);
   }
 }
