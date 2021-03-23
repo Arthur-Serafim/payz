@@ -2,11 +2,38 @@ function handleLoadPerks() {
   const perksContainer = document.querySelector(".header-perks-container");
 
   const descriptionContent = [
-    { image: "/assets/perks-1.png", label: "Zero Transaction Fees" },
-    { image: "/assets/perks-2.png", label: "Bitcoin Rewards" },
-    { image: "/assets/perks-3.png", label: "VISA and Mastercard Payments" },
-    { image: "/assets/perks-4.png", label: "Global Payments" },
-    { image: "/assets/perks-5.png", label: "Pay with Stablecoins" },
+    {
+      image: "/assets/perks-1.png",
+      label:
+        navigator.language == "es"
+          ? "Tarifas de transacción cero"
+          : "Zero Transaction Fees",
+    },
+    {
+      image: "/assets/perks-2.png",
+      label:
+        navigator.language == "es"
+          ? "Recompensas en Bitcoin"
+          : "Bitcoin Rewards",
+    },
+    {
+      image: "/assets/perks-3.png",
+      label:
+        navigator.language == "es"
+          ? "Pagos por VISA y Mastercard"
+          : "VISA and Mastercard Payments",
+    },
+    {
+      image: "/assets/perks-4.png",
+      label: navigator.language == "es" ? "Pagos Globales" : "Global Payments",
+    },
+    {
+      image: "/assets/perks-5.png",
+      label:
+        navigator.language == "es"
+          ? "Pague con Stablecoins"
+          : "Pay with Stablecoins",
+    },
   ];
 
   descriptionContent.forEach((item, index) => {

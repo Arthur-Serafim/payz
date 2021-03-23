@@ -52,8 +52,8 @@
           alt="Logo Image"
           class="header-logo-image"
         />
-        <h2 class="header-title">The most rewarding way to Pay</h2>
-        <p class="header-description">
+        <h2 class="header-title" id="header-title">The most rewarding way to Pay</h2>
+        <p class="header-description" id="header-description">
           Join the waitlist for early access to the Payz App.
         </p>
         <div class="header-input-container">
@@ -77,8 +77,8 @@
     </section>
     <section class="global-section">
       <div class="global-content">
-        <h3 class="global-tag">Pay Globally</h3>
-        <h2 class="global-title">
+        <h3 class="global-tag" id="global-title">Pay Globally</h3>
+        <h2 class="global-title" id="global-description">
           Payz Helps family and friends around the world pay local bills in any currency.
         </h2>
         <img src="/assets/global-phone.png" class="global-mobile" />
@@ -86,9 +86,9 @@
     </section>
     <section class="rewards-section">
       <div class="global-content rewards-content">
-        <h3 class="global-tag">Get Rewards</h3>
-        <h2 class="global-title" style="max-width: 620px">
-          Payz rewards customers in the worlds most pristine collateral asset,
+        <h3 class="global-tag" id="rewards-title">Get Rewards</h3>
+        <h2 class="global-title" style="max-width: 620px" id="rewards-description">
+          Payz rewards customers in the world's most pristine collateral asset,
           BITCOIN.
         </h2>
           <img src="/assets/rewards-mobile.png" class="rewards-mobile" />
@@ -97,16 +97,16 @@
   </section>
     <section class="global-section digital-section" style="clip-path: polygon(0 0, 100% 0, 100% 90%, 0 80%)">
       <div class="global-content content-top">
-        <h3 class="global-tag">Digital Currencies</h3>
-        <h2 class="global-title">
-          Payz allows every Visa and Mastercard account to be repayed or
+        <h3 class="global-tag" id="digital-title">Digital Currencies</h3>
+        <h2 class="global-title" id="digital-description">
+          Payz allows every Visa and Mastercard account to be repaid or
           credited using digital currencies.
         </h2>
           <img src="/assets/digital.png" class="global-mobile digital-mobile" />
       </div>
     </section>
     <footer class="footer-container">
-      <h2 class="footer-title">
+      <h2 class="footer-title" id="header-description">
         Join the waitlist for early access to the PayZ App.
       </h2>
       <div class="header-input-container">
@@ -126,7 +126,7 @@
           <button name="subscribe" type="submit" class="header-button" id="mc-embedded-subscribe">Join Waitlist</button>
         </form>
       </div>
-      <p class="header-waiting">Coming Soon</p>
+      <p class="header-waiting" id="header-waiting">Coming Soon</p>
       <div class="footer-stores-container">
         <img src="/assets/app-store.png" alt="Get on appstore" />
         <img src="/assets/play-store.png" alt="Get on playstore" />
@@ -139,6 +139,21 @@
     <script src="./index.js"></script>
   </body>
   <script>
+    if (navigator.language == 'es') {
+      document.querySelector('#header-title').textContent = 'La mejor forma de pagar'
+      document.querySelectorAll('#header-description').forEach(element => element.textContent = 'Únase a la lista de espera para acceder temprano a la aplicación Payz.')
+      document.querySelectorAll('#mce-EMAIL').forEach(element => element.placeholder = 'Ingrese su dirección de correo electrónico.')
+      document.querySelectorAll('#mc-embedded-subscribe').forEach(element => element.textContent = 'Unirse a la lista de espera')
+      document.querySelector('#global-title').textContent = 'Pague globalmente'
+      document.querySelector('#global-description').textContent = 'Payz Ayuda a familiares y amigos de todo el mundo a pagar las facturas locales en cualquier moneda.'
+      document.querySelector('#rewards-title').textContent = 'Obtener recompensas'
+      document.querySelector('#rewards-description').textContent = 'Payz recompensa a los clientes en el activo más prístino del mundo, BITCOIN.'
+      document.querySelector('#digital-title').textContent = 'Monedas digitales'
+      document.querySelector('#digital-description').textContent = 'Payz permite que todas las cuentas de Visa y Mastercard sean reembolsadas o acreditadas utilizando monedas digitales.'
+      document.querySelector('#header-waiting').textContent = 'Próximamente'
+
+    }
+
     jQuery('.mailchimpform').submit(function (e) {
       var $this = jQuery(this);
       jQuery.ajax({
@@ -154,10 +169,10 @@
               if (data.result != "success") {
                 document.querySelector('.chip-container').classList.add('display')
                 document.querySelector('.chip').classList.add('error')
-                document.querySelector('.chip').textContent = 'Error subscribing to mail list!'
+                document.querySelector('.chip').textContent = navigator.language === 'es' ? 'No se pudo unir a la lista de espera' : 'Failed to join the waitlist'
               } else {
                 document.querySelector('.chip-container').classList.add('display')
-                document.querySelector('.chip').textContent = 'Subscribed successfully'
+                document.querySelector('.chip').textContent = navigator.language === 'es' ? 'Suscrito exitosamente' : 'Subscribed successfully'
               }
 
               document.querySelectorAll('.header-input').forEach(element => {
