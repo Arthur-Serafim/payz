@@ -435,6 +435,8 @@ input[type="color"] {
   justify-content: center;
   color: #fcfcfc;
   cursor: pointer;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
 }
 
 .header-button::after {
