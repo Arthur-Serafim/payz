@@ -419,7 +419,7 @@ input[type="color"] {
   overflow: hidden;
 }
 
-.header-button::before {
+.header-button:before {
   content: "Join Waitlist";
   position: absolute;
   top: 0;
@@ -429,7 +429,6 @@ input[type="color"] {
   font-family: "Roobert", sans-serif;
   font-size: 20px;
   letter-spacing: 0.035em;
-  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -438,7 +437,7 @@ input[type="color"] {
   border-radius: 10px;
 }
 
-.header-button::after {
+.header-button:after {
   content: "";
   height: 400px;
   width: 400px;
@@ -446,7 +445,7 @@ input[type="color"] {
   left: -90px;
   top: -200px;
   z-index: -1;
-  background-image: conic-gradient(
+  background: conic-gradient(
     from 31.49deg at 54.76% 56.94%,
     #373fff 0deg,
     #00c2ff 210deg,
@@ -459,11 +458,11 @@ input[type="color"] {
 }
 
 @media (hover) {
-  .header-button:hover::after {
+  .header-button:hover:after {
     animation: spin 3s linear infinite;
   }
 
-  .header-button::before {
+  .header-button:before {
     backdrop-filter: blur(10px);
   }
 }
@@ -493,7 +492,7 @@ input[type="color"] {
   .button-container {
     margin: 0;
     width: 100% !important;
-    height: 55px;
+    height: 55px !important;
   }
 
   .mailchimpform {
