@@ -435,7 +435,6 @@ input[type="color"] {
   justify-content: center;
   color: #fcfcfc;
   cursor: pointer;
-  backdrop-filter: blur(10px);
   border-radius: 10px;
 }
 
@@ -459,8 +458,14 @@ input[type="color"] {
   transform: scale(1.01);
 }
 
-.header-button:hover::after {
-  animation: spin 3s linear infinite;
+@media (hover) {
+  .header-button:hover::after {
+    animation: spin 3s linear infinite;
+  }
+
+  .header-button::before {
+    backdrop-filter: blur(10px);
+  }
 }
 
 .header-button:active {
