@@ -462,7 +462,7 @@ input[type="color"] {
 @media only screen and (max-width: 600px) {
   .header-perks-container {
     grid-gap: 0;
-    margin-top: 42px;
+    margin-top: 35px;
     grid-template-rows: repeat(2, 150px);
   }
 }
@@ -1020,7 +1020,7 @@ input[type="color"] {
   font-size: 10px;
   margin-top: 15px;
   margin: 0 auto;
-  margin-top: 15px;
+  margin-top: 5px;
   box-sizing: border-box;
   text-align: center;
   color: #4b65a8;
@@ -1034,6 +1034,7 @@ input[type="color"] {
 
 @media only screen and (max-width: 400px) {
   .join-span {
-    width: 250px;
+    width: 100%;
+    padding: 0 25px;
   }
 }
