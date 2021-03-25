@@ -945,7 +945,8 @@ input[type="color"] {
 
 @media only screen and (max-width: 450px) {
   .footer-container {
-    height: 500px;
+    height: 600px;
+    padding-top: 0;
   }
 }
 
@@ -976,6 +977,7 @@ input[type="color"] {
   .footer-title {
     font-size: 36px;
     max-width: 80%;
+    margin-top: 60px;
   }
 }
 
@@ -1021,6 +1023,7 @@ input[type="color"] {
   margin-top: 15px;
   box-sizing: border-box;
   text-align: center;
+  color: #4b65a8;
 }
 
 @media only screen and (max-width: 650px) {
