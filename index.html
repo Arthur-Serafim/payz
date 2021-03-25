@@ -71,9 +71,7 @@
               placeholder="Enter your email address"
               required
             />
-            <div class="button-container">
-              <button name="subscribe" type="submit" class="header-button"  id="mc-embedded-subscribe"></button>
-            </div>
+            <button name="subscribe" type="submit" class="header-button"  id="mc-embedded-subscribe">Join Waitlist</button>
           </form>
         </div>
         <span class="join-span">By joining the waitlist for the Payz application, you agree to receive marketing communications pursuant to Paymentz Inc Privacy Policy.</span>
@@ -128,9 +126,7 @@
           placeholder="Enter your email address"
           required
           />
-          <div class="button-container">
-            <button name="subscribe" type="submit" class="header-button" id="mc-embedded-subscribe"></button>
-          </div>
+          <button name="subscribe" type="submit" class="header-button" id="mc-embedded-subscribe">Join Waitlist</button>
         </form>
       </div>
       <span class="join-span" style="color: white">By joining the waitlist for the Payz application, you agree to receive marketing communications pursuant to Paymentz Inc Privacy Policy.</span>
@@ -152,7 +148,7 @@
       document.querySelector('#header-title').textContent = 'La mejor forma de pagar'
       document.querySelectorAll('#header-description').forEach(element => element.textContent = 'Únase a la lista de espera para acceder temprano a la aplicación Payz.')
       document.querySelectorAll('#mce-EMAIL').forEach(element => element.placeholder = 'Ingrese su dirección de correo electrónico.')
-      document.querySelectorAll('#mc-embedded-subscribe').forEach(element => element.classList.add("spanish-button"))
+      document.querySelectorAll('#mc-embedded-subscribe').forEach(element => element.textContent = 'Unirse a la lista de espera')
       document.querySelector('#global-title').textContent = 'Pague globalmente'
       document.querySelector('#global-description').textContent = 'Payz Ayuda a familiares y amigos de todo el mundo a pagar las facturas locales en cualquier moneda.'
       document.querySelector('#rewards-title').textContent = 'Obtener recompensas'

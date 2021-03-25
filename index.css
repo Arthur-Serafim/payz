@@ -400,105 +400,29 @@ input[type="color"] {
 }
 
 .header-button {
-  height: 72px;
-  width: 168px;
-  padding: 0 32px;
-  font-size: 20px;
 
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  border-radius: 10px;
-  outline: none;
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
-  background-color: transparent;
-  border: none;
-  overflow: hidden;
-}
-
-.header-button:before {
-  content: "Join Waitlist";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  font-family: "Roobert", sans-serif;
-  font-size: 20px;
-  letter-spacing: 0.035em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fcfcfc;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-.header-button:after {
-  content: "";
-  height: 400px;
-  width: 400px;
-  position: absolute;
-  left: -90px;
-  top: -200px;
-  z-index: -1;
   background: conic-gradient(
     from 31.49deg at 54.76% 56.94%,
     #373fff 0deg,
     #00c2ff 210deg,
     #0c4cf1 360deg
   );
-}
-
-.header-button:hover {
-  transform: scale(1.01);
-}
-
-@media (hover) {
-  .header-button:hover:after {
-    animation: spin 3s linear infinite;
-  }
-
-  .header-button:before {
-    backdrop-filter: blur(10px);
-  }
-}
-
-.header-button:active {
-  transform: scale(0.99);
-}
-
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
+  border-radius: 10px;
+  border: none;
+  color: white;
+  text-align: center;
+  height: 72px;
+  cursor: pointer;
+  padding: 0 32px;
+  font-size: 20px;
+  outline: none;
 }
 
 @media only screen and (max-width: 650px) {
   .header-button {
-    margin: 0 auto;
+    margin: 0;
     width: 60%;
     height: 55px;
-  }
-
-  .header-button::after {
-    height: 500px;
-    width: 500px;
-  }
-
-  .button-container {
-    margin: 0;
-    width: 100% !important;
-    height: 55px !important;
-  }
-
-  .mailchimpform {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
   }
 }
 
@@ -507,11 +431,14 @@ input[type="color"] {
     width: 85%;
     font-size: 16px;
   }
+}
 
-  .header-button::after {
-    width: 625px;
-    height: 625px;
-  }
+.header-button:hover {
+  transform: scale(1.01);
+}
+
+.header-button:active {
+  transform: scale(0.99);
 }
 
 .header-perks-container {
@@ -1111,20 +1038,4 @@ input[type="color"] {
     width: 100%;
     padding: 0 25px;
   }
-}
-
-.mailchimpform {
-  display: flex;
-  align-items: center;
-}
-
-.button-container {
-  position: relative;
-  display: inline-flex;
-  width: 168px;
-  height: 72px;
-}
-
-.spanish-button::before {
-  content: "Unirse a la lista de espera";
 }
